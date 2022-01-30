@@ -13,4 +13,4 @@ Python-Django
         <enter>
 
 
-> TIME=00:50:45
+> T=01:00:55
