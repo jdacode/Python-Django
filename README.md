@@ -40,12 +40,15 @@ Python-Django
 ![django_arch](/static/img/1.png)
 <br><br>
 
-    Checking Django
-        python3 manage.py check
-
-    
 ## Django Projects
 
-    django-admin startproject <project_name> .
+    Installation
+        django-admin startproject <project_name> .
 
-> T=01:00:55
+    Checking Django
+        python3 manage.py check
+        
+    Run Django
+        python3 manage.py runserver
+
+> T=00:22:07
