@@ -31,11 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # admin interface
     'django.contrib.admin',
-    'django.contrib.auth',
+    # authenticating users
+    'django.contrib.auth', 
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    # Legacy, It's not used anymore. Session is a temporary memory on the server for managing user data
+    # 'django.contrib.sessions',
+    # Display notification to the user
     'django.contrib.messages',
+    # Static files like images, css
     'django.contrib.staticfiles',
 ]
 
