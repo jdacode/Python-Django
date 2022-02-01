@@ -54,4 +54,4 @@ Python-Django
     Start App
         python3 manage.py startapp playground
 
-> T=00:25:00
+> T=00:36:54
