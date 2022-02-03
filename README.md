@@ -127,14 +127,4 @@ Python-Django
                 </html>
 
 
-
-## Django Data Modeling
-
-![data_model](/static/img/2.png)
-<br><br>
-
-
-
-> T=01:00:24
-
 > DOTADIW
