@@ -3,7 +3,7 @@ Python-Django
 
 ## Django Data Modeling
 
-![data_model](/static/img/2.png)
+![data_model](02-storefront/static/img/2.png)
 <br><br>
 
 Creating model:
