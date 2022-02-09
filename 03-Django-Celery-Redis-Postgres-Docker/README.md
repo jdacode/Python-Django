@@ -19,23 +19,42 @@
 4. Run `docker compose up` and the Docker compose command starts and runs your entire app. You can alternatively run `docker-compose up` using the docker-compose binary.
 
 
-    docker-compose -f docker-compose.yml build
+        docker-compose -f docker-compose.yml build
 
-    ERROR: stderr=OpenSSL version mismatch
+        ERROR: stderr=OpenSSL version mismatch
 
-        Install Environment 
-                python3 -m venv .venv
-                source ./venv/bin/activate
-                pip install docker-compose
+            Install Environment 
+                    python3 -m venv .venv
+                    source ./venv/bin/activate
+                    pip install docker-compose
 
-    docker-compose up --build
-    docker-compose build
+        docker-compose up --build
+        docker-compose build
 
-5. Create Django project
+5. Create Django app project
 
-    docker-compose run app sh -c "django-admin startproject app ."
-    pip3 install -r requirements.txt
-    pip3 install django
-    django-admin startproject app .
+        docker-compose run app sh -c "django-admin startproject app ."
+        pip3 install -r requirements.txt
+        pip3 install django
+        django-admin startproject app .
+
+6. Create Django core project
+
+        docker-compose run app sh -c "django-admin startproject core"
+        django-admin startproject core
+
+7. Update app/settings.py
+
+        INSTALLED_APPS = [
+            ...
+            'core',
+        ]
+
+8. Create the following folders/files
+    
+        core/management
+        create file core/management/__init__.py
+        create file core/management/commands/
+        create file core/management/commands/__init__.py
 
 T=00:10:42
