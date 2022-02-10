@@ -17,10 +17,13 @@ RUN apk add --update --no-cache postgresql-client jpeg-dev
 # And adding dependencies for postgres client
 RUN apk add --update --no-cache --virtual .tmp-build-deps \ 
     gcc libc-dev linux-headers postgresql-dev musl-dev zlib zlib-dev
-RUN pip install -r /requirements.txt
+RUN pip3 install -r /requirements.txt
 RUN apk del .tmp-build-deps
 
 # Application folder
 RUN mkdir /app
 COPY ./app /app
 WORKDIR /app
+
+# Try to run your service on port 8080 if possible
+EXPOSE 8080
